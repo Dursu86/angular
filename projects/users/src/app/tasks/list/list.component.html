@@ -1,0 +1,7 @@
+<h2>Lista de tareas</h2>
+<sdi-add (onAdd)="handleAdd($event)"></sdi-add>
+<ul>
+  <li *ngFor="let item of tasks">
+    <sdi-card [item]="item" (onDelete)="handleDelete($event)" (onChange)="handleChange($event)"></sdi-card>
+  </li>
+</ul>
